@@ -10,8 +10,8 @@ async function aboutMe(){
     wrapper.classList.add("aboutMe");
 
     wrapper.innerHTML = `
+        <h2>${data.username}</h2>
         <img src="${data.profile.images["90x90"]}">
-        <h3>${data.username}</h3>
         <p>${data.profile.bio.replace(/\n/g,'<br>') || ""}</p>
         <p>Country: ${data.profile.country || ""}</p>
     `;
@@ -32,7 +32,11 @@ aboutMe();
 
 
 async function doThingApi(n) {
-    const res = await fetch(`https://scratch.mit.edu/messages/ajax/user-activity/?user=ko-math&max=${n}`);
+    if (n > 20){
+        alert('20以下の数値を入力してください');
+    } else {
+        const res = await fetch(`https://scratch.mit.edu/messages/ajax/user-activity/?user=ko-math&max=${n}`);
+    }
     return await res.text();
 }
 
