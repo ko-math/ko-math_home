@@ -41,10 +41,7 @@ async function doThingApi(n) {
 }
 
 async function doThing() {
-    const removeElements = document.getElementsByClassName('doThingElement');
-    for (let removeElement of removeElements){
-        removeElement.remove();
-    }
+    document.querySelectorAll('.doThingElement').forEach(el => el.remove());
     
     const count =document.getElementById('doThingCount').value;
     const doThing = await doThingApi(count);
@@ -67,10 +64,12 @@ function sendHeight() {
 window.addEventListener('load', sendHeight);
 
 // DOMが変わったら毎回
+/*
 new MutationObserver(sendHeight)
   .observe(document.body, {
     childList: true,
     subtree: true
 });
+*/
 
 
