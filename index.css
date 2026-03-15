@@ -114,9 +114,9 @@ details {
     padding:8p;
 }
 a{
-    color: #6a5acd; /* 文字色 */
-    text-decoration: none; /* 下線を消す（必要に応じて） */
-    transition: 0.3s; /* ホバー時の変化を滑らかに */
+    color: #6a5acd;
+    text-decoration: none; 
+    transition: 0.3s; 
 }
 a:hover{
     color: red;
@@ -132,12 +132,13 @@ a:hover{
 }
 .logo{  
     display: flex;
-    justify-content:flex-start;   /* 横中央 */
-    align-items:center;       /* 高さを揃える */
+    justify-content:flex-start;   
+    align-items:center;   
+    padding:0 30px;
     gap: 50px;
 }
 .long-logo{
-    vertical-align: 5px;
+    vertical-align: 30px;
 }
 
 
