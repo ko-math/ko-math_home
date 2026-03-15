@@ -168,6 +168,12 @@ h3{
 }
 
 .links{
-border:1px;
+    border:1px;
+}
+
+.github-logo{
+      position: relative;
+      top: 10px;
+      left: 30px;
 }
 
