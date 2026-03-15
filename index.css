@@ -106,9 +106,6 @@ details {
     transform:translate(-50%,-50%);
     font-size:30px;
 }
-body{
-    background-color:#bcddff !important;
-}
 
 .center{
     display:flex;
@@ -124,4 +121,8 @@ a{
 a:hover{
     color: red;
     text-decoration: underline;
+}
+
+body{
+    background-color:#bcddff;
 }
