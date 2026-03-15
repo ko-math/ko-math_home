@@ -34,6 +34,7 @@ aboutMe();
 async function doThingApi(n) {
     if (n > 20){
         alert('20以下の数値を入力してください');
+        return:'error';
     } else {
         const res = await fetch(`https://scratch.mit.edu/messages/ajax/user-activity/?user=ko-math&max=${n}`);
     }
