@@ -64,10 +64,10 @@ input{
     border-color:#cc5500;
     box-shadow:0 0 8px #cc5500;
 }
-input:focus:focus{
+input:focus{
     outline:none;
-    border-color:#cc5500;
-    box-shadow:0 0 8px #cc5500;/*ここ*/
+    border-color:#ffff93;
+    box-shadow:0 0 8px #ffff93;/*ここ*/
 }
 
 
