@@ -37,7 +37,9 @@ async function doThingApi(n) {
         return '';
     }
     const res = await fetch(`https://dothing.komath.workers.dev/?&max=${n}`);
-    return await res.text();
+    let html = await res.text();
+    html = html.replace(/(href|src)="\//g, 'href="https://scratch.mit.edu/');
+    return html;
 }
 
 async function doThing() {
@@ -53,15 +55,6 @@ async function doThing() {
 
 const inputDoThing =document.getElementById('doThingCount');
 inputDoThing.addEventListener("change",doThing);
-
-
-function sendHeight() {
-  const h = document.documentElement.scrollHeight;
-  window.parent.postMessage(h, '*');
-}
-
-// 初回
-window.addEventListener('load', sendHeight);
 
 // DOMが変わったら毎回
 /*
