@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "IBM";
+    src: url("./font1.ttf") format("truetype");
+}
+body{
+    background-color:#f4f9ff;
+}
+body,input,textarea {
+    font-family: "IBM";
+}
+.output{
+    font-size:30px;
+    font-weight:500;
+}
+#formula{
+    font-size:20px;
+    border-radius:15px;
+    font-weight:500;
+    width:500px;
+    height:35px;
+    padding:5px 10px;
+    border:3px solid #44aaff;
+    transition:0.2s;1
+}
+#inputStrBF{
+    font-size:20px;
+    border-radius:15px;
+    font-weight:500;
+    width:200px;
+    height:35px;
+    padding:5px 10px;
+    border:3px solid #cc5500;
+    transition:0.2s;1
+}
+#bfcode{
+    font-size:20px;
+    border-radius:15px;
+    font-weight:500;
+    width:300px;
+    height:100px;
+    padding:5px 10px;
+    border:3px solid #cc5500;
+    transition:0.2s;1
+}
+
+#formula:focus{
+    outline:none;
+    border-color:#33aaff;
+    box-shadow:0 0 8px #33aaff;
+}            
+#bfcode:focus,#inputStrBF:focus{
+    outline:none;
+    border-color:#cc5500;
+    box-shadow:0 0 8px #cc5500;
+}
+
+.p{
+    font-size:50px;
+}
+li {
+  list-style-type: "▷";
+}

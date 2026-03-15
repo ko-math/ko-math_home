@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./first.css">
+    </head>
+    <body>
+        <p class ="p">電卓(calculator)</p>
+        <ul>
+            <li>定数は@を最後につけてください。pi@,e@,tau@,phi@が使用可能です。</li>
+            <li>関数はsin,cos,tan,sqrt,max,min,exp,ln,log,round,floor,ceil,asin,acos,atan,factが使用可能です。特殊値としてrandも括弧付きで使用できます。<br>演算子は、+,-,*,/,^,%が使用可能です。()も使用可能です。</li>
+        </ul>
+        <div id="inputFormula">
+            <input type="text" id="formula" placeholder="ex. round((sin(pi@*2)+ln(e@))*(5+phi@))">
+        </div>
+        
+        <p class ="p">BrainFインタプリタ</p>
+        <ul>
+            <li>+ - < > , . [ ] が使えます。</li>
+            <li>32bitです。</li>
+            <li>EOFは0です。</li>
+        </ul>
+        <div id="inputBF">
+            <p>コードを入力</p>
+            <textarea id="bfcode" placeholder="ex. >++++++[<++++++++++>-]<+++++."></textarea>
+            <br>
+            <p>標準入力</p>
+            <input type="text" id="inputStrBF" placeholder="ex.hello">
+        </div>
+        <br>
+        <h4>by ko-math</h4>
+        <script src="./ko_math.js"></script>
+        <script src="./event.js"></script>
+    </body>
+</html>
