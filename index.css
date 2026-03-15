@@ -116,4 +116,12 @@ body{
     background-color:white;
     padding:8p;
 }
-
+a{
+    color: #9999ff; /* 文字色 */
+    text-decoration: none; /* 下線を消す（必要に応じて） */
+    transition: 0.3s; /* ホバー時の変化を滑らかに */
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
