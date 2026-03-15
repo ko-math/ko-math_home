@@ -34,9 +34,9 @@ aboutMe();
 async function doThingApi(n) {
     if (n > 20){
         alert('20以下の数値を入力してください');
-        return 'error';
+        const res = 'error';
     } else {
-        const res = await fetch(`https://scratch.mit.edu/messages/ajax/user-activity/?user=ko-math&max=${n}`);
+        const res = await fetch(`https://dothing.komath.workers.dev/?&max=${n}`);
     }
     return await res.text();
 }
