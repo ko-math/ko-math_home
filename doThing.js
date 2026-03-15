@@ -50,6 +50,9 @@ async function doThing() {
     const wrapper = document.createElement('div');
     wrapper.classList.add('doThingElement');
     wrapper.innerHTML = doThing;
+    wrapper.querySelectorAll("a").forEach(a => {
+        a.target = "_blank";
+    });
     document.getElementById('doThingApi').appendChild(wrapper);
 }
 
