@@ -150,3 +150,12 @@ a:hover{
 footer{
     background-color:#222222;
 }
+
+.dialog_body{
+    padding:5px 20px;
+}
+h2{
+    line-height:0em;
+    margin:10px 0px;
+}
+
