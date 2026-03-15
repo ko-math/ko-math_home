@@ -12,7 +12,7 @@ async function aboutMe(){
     wrapper.innerHTML = `
         <img src="${data.profile.images["90x90"]}">
         <h3>${data.username}</h3>
-        <p>${data.profile.bio || ""}</p>
+        <p>${data.profile.bio.replace(/\n/g,'<br>') || ""}</p>
         <p>Country: ${data.profile.country || ""}</p>
     `;
 
