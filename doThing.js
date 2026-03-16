@@ -57,7 +57,7 @@ async function doThing() {
 /*
 const inputDoThing =document.getElementById('doThingCount');
 inputDoThing.addEventListener("change",doThing);*/
-doThing();
+await doThing();
 
 
 // DOMが変わったら毎回
