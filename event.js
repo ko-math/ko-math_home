@@ -50,18 +50,26 @@ inputBF.addEventListener('change' , function (){
 });
 
 
-const inputFormula = document.querySelector('#compRun');
-inputFormula.addEventListener('click' , function (){
+const compRun = document.querySelector('#compRun');
+compRun.addEventListener('click' , function (){
     const delList = document.querySelectorAll('.outputCompFormula');
     for (const del of delList) {
         del.remove();
     }
-    const formula = inputFormula.value;
-    const ans = ko_math.formula(formula);
-    const inputDiv = document.querySelector('#inputFormula');
-    const output = document.createElement('p');
-    output.textContent = ans;
-    output.classList.add('outputCompFormula');
-    inputDiv.append(output);
+    const data = [];
+    data.push(compFormula.value);
+    data.push(compOpe.value);    
+    data.push(compVar.value);
+    data.push(compVarName.value);
+    data.push(compRange.value);
+    const ans = ko_math.functionary(data[1],data[0],JSON.parse(data[2]),data[3],JSON.parse(data[4]));
+    
+    const inputDiv = document.querySelector('#inputCompFormula');
+    for (let i = 0;i < 5;i++){
+        const output = document.createElement('p');
+        output.textContent = ans[i];
+        output.classList.add('outputCompFormula');
+        inputDiv.append(output);
+    }
 });
 
