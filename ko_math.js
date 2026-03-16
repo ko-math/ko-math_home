@@ -425,7 +425,7 @@ function functionary(ope , Formula ,variable,variable_name ,range){ //ope→dif,
     const newVar = {...variable}; //shallow
     switch (ope){
         case 'dif':
-            h = 0.0000000001;
+            h = 0.000001;
             newVar[variable_name]= Number(variable[variable_name]) + h;
             value1 = complexCalc(Formula,newVar);
             newVar[variable_name]= Number(variable[variable_name]) - h;
