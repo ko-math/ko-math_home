@@ -31,8 +31,8 @@ aboutMe();
 
 
 async function doThingApi(n) {
-    if (n > 20){
-        alert('20以下の数値を入力してください');
+    if (n > 100){
+        alert('100以下の数値を入力してください');
         return '';
     }
     const res = await fetch(`https://dothing.komath.workers.dev/?&max=${n}`);
