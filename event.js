@@ -67,7 +67,7 @@ compRun.addEventListener('click' , function (){
     console.log(data);
     console.log(ans);
     
-    const inputDiv = document.querySelector('#inputComplex');
+    const inputDiv = document.querySelector('#inputComp');
     const output = document.createElement('p');
     output.textContent = ans;
     output.classList.add('outputCompFormula');
