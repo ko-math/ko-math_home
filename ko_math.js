@@ -411,7 +411,7 @@ function jumpTableAdd(code){
 function complexCalc(Formula ,variable){ //variableはオブジェクト形式で。
     let formula = Formula;
     for (const vari in variable){
-        formula = formula.replaceAll(vari,'(' + variable[vari] + ')'); 
+        formula = formula.replaceAll('@'+vari,'(' + variable[vari] + ')'); 
     }
     formula = calc(formula);
     return formula
