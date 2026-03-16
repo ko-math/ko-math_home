@@ -1,3 +1,4 @@
+
 const inputFormula = document.querySelector('#formula');
 inputFormula.addEventListener('input' , function (){
     const delList = document.querySelectorAll('.outputFormula');
@@ -63,13 +64,12 @@ compRun.addEventListener('click' , function (){
     data.push(compVarName.value);
     data.push(compRange.value);
     const ans = ko_math.functionary(data[1],data[0],JSON.parse(data[2]),data[3],JSON.parse(data[4]));
+    console.log(data);
+    console.log(ans);
     
     const inputDiv = document.querySelector('#inputComplex');
-    for (let i = 0;i < 5;i++){
-        const output = document.createElement('p');
-        output.textContent = ans[i];
-        output.classList.add('outputCompFormula');
-        inputDiv.append(output);
-    }
+    const output = document.createElement('p');
+    output.textContent = ans;
+    output.classList.add('outputCompFormula');
+    inputDiv.append(output);
 });
-
