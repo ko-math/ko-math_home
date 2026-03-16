@@ -64,7 +64,7 @@ compRun.addEventListener('click' , function (){
     data.push(compRange.value);
     const ans = ko_math.functionary(data[1],data[0],JSON.parse(data[2]),data[3],JSON.parse(data[4]));
     
-    const inputDiv = document.querySelector('#inputCompFormula');
+    const inputDiv = document.querySelector('#inputComplex');
     for (let i = 0;i < 5;i++){
         const output = document.createElement('p');
         output.textContent = ans[i];
