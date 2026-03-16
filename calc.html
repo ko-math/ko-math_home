@@ -39,23 +39,23 @@
             <li>dif(微分) ,int(積分),calc(計算),solve(根) が使えます。</li>
             <li>絶対にすべて入力してください。</li>
         </ul>
-        <div id="inputComplex">
+        <div id="inputComp">
             <p>式を入力</p><br><sup>変数の前には@を置いてください</sup><br>
-            <input id="compFormula" placeholder="ex.@x^2+@x+1">
+            <input id="compFormula" class="inputComplex" placeholder="ex.@x^2+@x+1">
             <br>            
             <p>演算名を入力</p><br>
-            <input id="compOpe" placeholder="ex.dif">
+            <input id="compOpe" class="inputComplex" placeholder="ex.dif">
             <br>
             <p>変数の名前&値</p><br><sup>名前と値をJSON形式で入力</sup><br>
-            <input taype="text" id="compVar" placeholder="ex.{&quot; x &quot; :613, &quot; y &quot; :905}">
+            <input taype="text" id="compVar" class="inputComplex" placeholder="ex.{&quot; x &quot; :613, &quot; y &quot; :905}">
             <br>
             <p>変数の名前</p><br><sup>微分する変数、積分する変数、求める変数。</sup><br>
-            <input type="text" id="compVarName" placeholder="ex.x">
+            <input type="text" id="compVarName" class="inputComplex" placeholder="ex.x">
             <br>
             <p>範囲</p><br><sup>intでは積分範囲、solveでは根のある程度の範囲を配列形式で入力してください。</sup><br>
-            <input type="text" id="compRange" placeholder="ex.[0,1]">
+            <input type="text" id="compRange" class="inputComplex" placeholder="ex.[0,1]">
             <br>
-            <input type="button" value="Run" id="compRun">
+            <input type="button" class="inputComplex" value="Run" id="compRun">
         </div>
         <br>
         <h4>by ko-math</h4>
