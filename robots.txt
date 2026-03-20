@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ko-math.f5.si/sitemap.xml
