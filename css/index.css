@@ -128,8 +128,16 @@ h3{
     display:flex;
     justify-content:center;
     background-color:white;
-    padding:8p;
+    padding: 8px;
 }
+.pCenter{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f9ff;
+    padding: 8px;
+}
+
+
 a{
     color: #6a5acd;
     text-decoration: none; 
