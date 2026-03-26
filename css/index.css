@@ -134,6 +134,7 @@ h3{
 .center.small{
     width:25%;
     margin: 0 auto;
+    border-radius:20px;
 }
 .center.p-that{
     margin: -0.5em;
