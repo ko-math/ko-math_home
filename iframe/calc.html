@@ -36,7 +36,7 @@
         
         <p class ="p">より複雑な計算</p>
         <ul>
-            <li>dif(微分) ,int(積分),calc(計算),solve(根) が使えます。</li>
+            <li>dif(微分) ,int(積分),calc(計算),solve(根),graph(グラフ) が使えます。</li>
             <li>絶対にすべて入力してください。</li>
         </ul>
         <div id="inputComp">
@@ -52,11 +52,12 @@
             <p>変数の名前</p><br><sup>微分する変数、積分する変数、求める変数。</sup><br>
             <input type="text" id="compVarName" class="inputComplex" placeholder="ex.x">
             <br>
-            <p>範囲</p><br><sup>intでは積分範囲、solveでは根のある程度の範囲を配列形式で入力してください。</sup><br>
+            <p>範囲</p><br><sup>intでは積分範囲、solveでは根のある程度の範囲、graphでは変数の範囲を配列形式で入力してください。</sup><br>
             <input type="text" id="compRange" class="inputComplex" placeholder="ex.[0,1]">
-            <br>
+            <br><br>
             <input type="button" class="inputComplex" value="Run" id="compRun">
         </div>
+        <canvas id="graph" width=400 ,height=400></canvas>
         <br>
         <h4>by ko-math</h4>
         <script src="/ko_math.js"></script>
