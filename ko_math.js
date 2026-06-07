@@ -542,4 +542,6 @@ function error(){
 //複素数
 //行列←That
 //AI
-console.log(ko_math.e);
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = ko_math;
+}
